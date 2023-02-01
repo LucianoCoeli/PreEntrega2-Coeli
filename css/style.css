@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logogame {
+    width: 180px;
+}
+
+.botones {
+    list-style: none;
+    display: flex;
+}
+
+.botones a {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 120%;
+    text-decoration: none;
+    color: #e10e82;
+}
+
+.main {
+    margin: 3rem;
+}
+
+.banner {
+    margin: -3rem -3rem 3rem -3rem;
+    background-image: url('https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(63, 63, 63);
+    position: relative;
+    top: 40%;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: wpx 0px;
+    grid-template-areas:
+        "producto-uno producto-dos producto-tres producto-cuatro"
+        "producto-cinco producto-seis . .";
+}
+
+.productos-grid img {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid div {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid h2 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 4px;
+    font-size: 130%;
+}
+
+.productos-grid p {
+    font-size: 90%;
+    padding: 5px 0px;
+}
+
+.productos-grid button {
+    margin-left: 4px;
+}
+
+.titulo-interno {
+    background-color: rgb(0, 180, 0);
+    padding-left: 10px;
+    color: white;
+}
+
+.footer {
+    background-color: #e10e82;
+    padding-bottom: 35px;
+}
+
+.footer div {
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    padding: 20px;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.redes img {
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+
+}

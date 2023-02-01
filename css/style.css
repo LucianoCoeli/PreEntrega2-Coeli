@@ -30,11 +30,11 @@
 }
 
 .main {
-    margin: 3rem;
+    margin: 2.5rem;
 }
 
 .banner {
-    margin: -3rem -3rem 3rem -3rem;
+    margin: -3rem -3rem 2rem -3rem;
     background-image: url('https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg');
     height: 300px;
     background-size: cover;
@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: wpx 0px;
+    gap: 4px;
     grid-template-areas:
         "producto-uno producto-dos producto-tres producto-cuatro"
         "producto-cinco producto-seis . .";
@@ -94,7 +94,7 @@
 
 .footer {
     background-color: #e10e82;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 }
 
 .footer div {
@@ -111,9 +111,74 @@
 }
 
 .redes img {
-    height: 25px;
+    height: 35px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logogame {
+        width: 180px;
+        padding-bottom: 5px;
+    }
+
+    .banner {
+        height: 250px;
+        margin: -3rem -2.5rem 2rem -3rem;
+    }
+
+    .productos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
+        grid-template-areas:
+            "producto-uno producto-dos producto-tres"
+            "producto-cuatro producto-cinco producto-seis";
+    }
+
+    .productos-grid img {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid div {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid h2 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 4px;
+        font-size: 100%;
+    }
+
+    .productos-grid p {
+        font-size: 80%;
+        padding: 5px 0px;
+    }
+
+    .productos-grid button {
+        margin-left: 4px;
+    }
+
+    .footer div {
+        color: white;
+        text-align: center;
+        font-size: 80%;
+        padding: 15px;
+    }
+
+    .footer {
+        background-color: #e10e82;
+        padding-bottom: 25px;
+    }
 
 }

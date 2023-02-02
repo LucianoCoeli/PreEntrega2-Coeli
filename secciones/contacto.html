@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 
 <body>
     <header class="header">
-        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png" alt="logo-game"></a>        <nav>
+        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png"
+                alt="logo-game"></a>
+        <nav>
             <ul class="botones">
                 <li><a href="../secciones/juegos-de-mesa.html">Juegos de Mesa</a></li>
                 <li><a href="../secciones/juegos-de-rol.html">Juegos de Rol</a></li>
@@ -22,18 +25,25 @@
         </nav>
     </header>
 
-    <main  class="main">
-        <h1 class="titulo-interno">Contáctanos</h1>
-        <p>¿Compraste alguno de nuestros juegos y te falta algún componente?
-            ¿Tenés alguna duda sobre nuestros juegos?</p>
-        <form action="#" method="get"></form>
-        <input type="persona" placeholder="Nombre completo" name="nombre">
-        <input type="edad" placeholder="Edad" name="edad">
-        <input type="correo" placeholder="Email" name="email">
-        <textarea name="mensaje" cols="30" rows="10">Déjanos tu mensaje...</textarea>
-        <button>Enviar</button>
-        <button>Reestablecer</button>
-        
+    <main class="main">
+        <h1 class="wow animate__animated animate__pulse titulo-interno">Contáctanos</h1>
+        <div class="contacto">
+            <p>¿Compraste alguno de nuestros juegos y te falta algún componente?
+                ¿Tenés alguna duda sobre nuestros juegos?</p>
+
+            <div>
+                <input type="persona" placeholder="Nombre completo" name="nombre">
+                <input type="edad" placeholder="Edad" name="edad">
+                <input type="correo" placeholder="Email" name="email">
+                <br>
+                <textarea name="mensaje" cols="30" rows="10">Déjanos tu mensaje...</textarea>
+                <br>
+                <button>Enviar</button>
+                <button>Reestablecer</button>
+                <form action="#" method="get"></form>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -41,12 +51,22 @@
             <p>Juramento 2550 6toA, Buenos Aires | +(54) 11 4784 3284 | contacto@devir.com.ar | Lun-Vie: 9 a 18 hs</p>
         </div>
         <ol class="redes">
-            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
-            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
-            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img src="../recursos/redes/twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/facebook.png"
+                        alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/instagram.png"
+                        alt="instagram-logo"></a></li>
+            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/twitter.png"
+                        alt="twitter-logo"></a></li>
         </ol>
     </footer>
 
 </body>
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>

@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
 
 <body>
     <header class="header">
-        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png" alt="logo-game"></a>
+        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png"
+                alt="logo-game"></a>
         <nav>
             <ul class="botones">
                 <li><a href="../secciones/juegos-de-mesa.html">Juegos de Mesa</a></li>
@@ -24,13 +26,19 @@
     </header>
 
     <main class="main">
-        <h1 class="titulo-interno">Nuestro Blog</h1>
-        <div>
-            <h2>¿Por qué jugar juegos de mesa?</h2>
-            <p>Ayudan al desarrollo de sus capacidades motoras, mentales y sensoriales. Desarrollan la concentración, la memoria, la observación y la imaginación. Muestran cómo resolver problemas, elaborar estrategias y tomar decisiones. Enseñan a cumplir las normas de convivencia.
-            </p>
-            <h2>Beneficios de los juegos de mesa</h2>
-            <p>Ayudan al desarrollo de sus capacidades motoras, mentales y sensoriales.
+        <h1 class="wow animate__animated animate__pulse titulo-interno">Nuestro Blog</h1>
+        <section class="blog">
+            <div>
+                <h2>¿Por qué jugar juegos de mesa?</h2>
+                <p>Ayudan al desarrollo de sus capacidades motoras, mentales y sensoriales. Desarrollan la
+                    concentración, la
+                    memoria, la observación y la imaginación. Muestran cómo resolver problemas, elaborar estrategias y
+                    tomar
+                    decisiones. Enseñan a cumplir las normas de convivencia.
+                </p>
+            </div>
+            <div>
+                <h2>Beneficios de los juegos de mesa</h2>
                 <ul>
                     <li>Desarrollan la concentración, la memoria, la observación y la imaginación.</li>
                     <li>Muestran cómo resolver problemas, elaborar estrategias y tomar decisiones.</li>
@@ -39,10 +47,12 @@
                     <li>Aumentan su nivel de tolerancia a la frustración y les enseñan a controlar su impaciencia.</li>
                     <li>Descubren la importancia del esfuerzo y del trabajo en equipo.</li>
                     <li>Mejoran su autoestima y la confianza en los compañeros y compañeras.</li>
-                    <li>Dependiendo de la edad, enseñan los números, a contar, vocabulario, a asociar ideas o conceptos, etc.</li>
+                    <li>Dependiendo de la edad, enseñan los números, a contar, vocabulario, a asociar ideas o conceptos,
+                        etc.</li>
                 </ul>
-                </p>
-        </div>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -50,12 +60,22 @@
             <p>Juramento 2550 6toA, Buenos Aires | +(54) 11 4784 3284 | contacto@devir.com.ar | Lun-Vie: 9 a 18 hs</p>
         </div>
         <ol class="redes">
-            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
-            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
-            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img src="../recursos/redes/twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/facebook.png"
+                        alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/instagram.png"
+                        alt="instagram-logo"></a></li>
+            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img
+                        class="wow animate__animated animate__bounceInUp" src="../recursos/redes/twitter.png"
+                        alt="twitter-logo"></a></li>
         </ol>
     </footer>
 
 </body>
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>

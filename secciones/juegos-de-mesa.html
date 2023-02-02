@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
     <title>Juegos de Mesa</title>
@@ -23,7 +24,51 @@
     </header>
 
     <main class="main">
-        <h1 class="titulo-interno">Juegos de Mesa</h1>
+        <h1 class="wow animate__animated animate__pulse titulo-interno">Juegos de Mesa</h1>
+
+        <section class="productos-grid-mesa">
+            <article class="producto-once">
+                <img src="../recursos/productos/productoonce.jpg" alt="producto-once">
+                <div>
+                    <h2>Catan | Edición de viaje</h2>
+                    <p>Esta práctica edición de viaje está diseñada como un cómodo maletín que permite ahorrar espacio y desplegar el tablero de juego de modo que las carreteras, poblados y ciudades queden perfectamente encajados en su lugar.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-tres">
+                <img src="../recursos/productos/productotres.jpg" alt="producto-tres">
+                <div>
+                    <h2>Carcassonne | 20 Aniversario</h2>
+                    <p>Carcassonne 20 aniversario es una edición especial de Carcassonne para celebrar el 20 aniversario
+                        de su victoria en el Spiel des Jahres en 2001. Esta edición incluye las fichas del juego base de
+                        Carcassonne, la mini expansión «El Río» (con cinco fichas de río nuevas), La miniexpansión «La
+                        Abadia» y una nueva miniexpansión «aniversario» de 15 casillas.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-cuatro">
+                <img src="../recursos/productos/productocuatro.jpg" alt="producto-cuatro">
+                <div>
+                    <h2>Fantasma Blitz</h2>
+                    <p>Un juego de reflejos rápido como un relámpago. Cada turno se revela una carta y los jugadores
+                        deben atrapar rápidamente el objeto que coincide en forma y color con alguno de los que se
+                        muestran en la carta. El problema es que en la mayoría de las cartas no hay ningún objeto que
+                        coincida.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-cinco">
+                <img src="../recursos/productos/productocinco.jpg" alt="producto-cinco">
+                <div>
+                    <h2>Century: La Ruta de las Especias</h2>
+                    <p>Un juego de reflejos rápido como un relámpago. Cada turno se revela una carta y los jugadores
+                        deben atrapar rápidamente el objeto que coincide en forma y color con alguno de los que se
+                        muestran en la carta. El problema es que en la mayoría de las cartas no hay ningún objeto que
+                        coincida.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+        </section>
 
     </main>
 
@@ -32,12 +77,15 @@
             <p>Juramento 2550 6toA, Buenos Aires | +(54) 11 4784 3284 | contacto@devir.com.ar | Lun-Vie: 9 a 18 hs</p>
         </div>
         <ol class="redes">
-            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
-            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
-            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img src="../recursos/redes/twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img class="wow animate__animated animate__bounceInUp" src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img class="wow animate__animated animate__bounceInUp" src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
+            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img class="wow animate__animated animate__bounceInUp" src="../recursos/redes/twitter.png" alt="twitter-logo"></a></li>
         </ol>
     </footer>
 
 </body>
-
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 </html>

@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Juego de Rol</title>
 </head>
 
 <body>
     <header class="header">
-        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png" alt="logo-game"></a>        <nav>
+        <a class="top" href="../index.html"><img class="logogame" src="../recursos/logo/game-logo.png"
+                alt="logo-game"></a>
+        <nav>
             <ul class="botones">
                 <li><a href="../secciones/juegos-de-mesa.html">Juegos de Mesa</a></li>
                 <li><a href="../secciones/juegos-de-rol.html">Juegos de Rol</a></li>
@@ -23,7 +26,43 @@
     </header>
 
     <main class="main">
-        <h1 class="titulo-interno">Juegos de Rol</h1>
+        <h1 class="wow animate__animated animate__pulse titulo-interno">Juegos de Rol</h1>
+
+        <section class="productos-grid-rol">
+            <article class="producto-siete">
+                <img src="../recursos/productos/productosiete.jpg" alt="producto-siete">
+                <div>
+                    <h2>Starfinder | Caja de iniciación</h2>
+                    <p>Entra en un emocionante universo de aventuras de ciencia ficción con la lo largo de desafiantes aventuras y batallas llenas de acción contra enemigos peligrosos! Con reglas simplificadas, este conjunto en caja de lujo es la introducción Caja de Iniciación de Starfinder!</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-ocho">
+                <img src="../recursos/productos/productoocho.jpg" alt="producto-ocho">
+                <div>
+                    <h2>Pathfinder | Caja de Iniciación</h2>
+                    <p>La Caja de iniciación de Pathfinder tiene todo lo que necesitas para empezar a jugar a Pathfinder, que es un imaginativo juego de mesa de fantasía para entre 2 y 5 jugadores.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-nueve">
+                <img src="../recursos/productos/productonueve.jpg" alt="producto-nueve">
+                <div>
+                    <h2>Dungeons & Dragons 5th Edition</h2>
+                    <p>¿Necesitas una nueva copia de tus gastados libros? ¿Tienes un amigo que quiere empezar a jugar? ¿Quieres una hermosa caja para tus libros de D&D? El Dungeons & Dragons Core Rules Gift Set  incluye una copia de los tres reglamentos básicos y una pantalla del DM, todo lo que necesitas para crear y jugar tus aventuras en el mejor juego de rol.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            <article class="producto-diez">
+                <img src="../recursos/productos/productodiez.jpg" alt="producto-diez">
+                <div>
+                    <h2>Aventuras en la Tierra Media</h2>
+                    <p>El camino sigue y sigue es una bella colección de 4 mapas de viaje de gran formato para Aventuras en la Tierra Media, que viene acompañado de un suplemento de 32 páginas repleto de información sobre el escenario, reglas y orientación para aprovechar al máximo tus viajes.</p>
+                </div>
+                <button>Ver más</button>
+            </article>
+            
+        </section>
 
     </main>
 
@@ -32,12 +71,19 @@
             <p>Juramento 2550 6toA, Buenos Aires | +(54) 11 4784 3284 | contacto@devir.com.ar | Lun-Vie: 9 a 18 hs</p>
         </div>
         <ol class="redes">
-            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
-            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
-            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img src="../recursos/redes/twitter.png" alt="twitter-logo"></a></li>
+            <li><a href="https://www.facebook.com/deviriberia/" target="_blank"><img class="wow animate__animated animate__bounceInUp" 
+                        src="../recursos/redes/facebook.png" alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/deviriberia/" target="_blank"><img class="wow animate__animated animate__bounceInUp" 
+                        src="../recursos/redes/instagram.png" alt="instagram-logo"></a></li>
+            <li><a href="https://twitter.com/DevirIberia" target="_blank"><img  class="wow animate__animated animate__bounceInUp" src="../recursos/redes/twitter.png"
+                        alt="twitter-logo"></a></li>
         </ol>
     </footer>
 
 </body>
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>

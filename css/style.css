@@ -24,7 +24,7 @@
 .botones a {
     padding: 1rem;
     font-weight: 700;
-    font-size: 120%;
+    font-size: 150%;
     text-decoration: none;
     color: #e10e82;
 }
@@ -36,14 +36,14 @@
 .banner {
     margin: 0rem -2.5rem;
     background-image: url('https://educacion30.b-cdn.net/wp-content/uploads/2016/06/dixit-main-flickr.jpg');
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position-y: center;
 }
 
 .banner h1 {
     color: white;
-    font-size: 200%;
+    font-size: 300%;
     text-align: center;
     text-shadow: 2px 2px 3px rgb(63, 63, 63);
     position: relative;
@@ -87,9 +87,83 @@
     margin-left: 4px;
 }
 
+.productos-grid-rol {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    gap: 2px;
+    grid-template-areas:
+        "producto-siete producto-ocho producto-nueve producto-diez";
+}
+
+.productos-grid-rol img {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid-rol div {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid-rol h2 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 4px;
+    font-size: 130%;
+}
+
+.productos-grid-rol p {
+    font-size: 90%;
+    padding: 5px 0px;
+}
+
+.productos-grid-rol button {
+    margin-left: 4px;
+}
+
+.productos-grid-mesa {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    gap: 2px;
+    grid-template-areas:
+        "producto-once producto-tres producto-cuatro producto-cinco";
+}
+
+.productos-grid-mesa img {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid-mesa div {
+    width: 20vw;
+    padding: 5px;
+}
+
+.productos-grid-mesa h2 {
+    color: #e10e82;
+    background-color: #e10e8223;
+    padding: 4px;
+    font-size: 130%;
+}
+
+.productos-grid-mesa p {
+    font-size: 90%;
+    padding: 5px 0px;
+}
+
+.productos-grid-mesa button {
+    margin-left: 4px;
+}
+
 .titulo-interno {
     background-color: rgb(0, 180, 0);
-    padding-left: 10px;
+    margin: 0rem -2.5rem;
+    padding: .5rem 0rem;
+    text-align: center;
     color: white;
 }
 
@@ -101,7 +175,7 @@
 .footer div {
     color: white;
     text-align: center;
-    font-size: 90%;
+    font-size: 120%;
     padding: 20px;
 }
 
@@ -114,6 +188,28 @@
 .redes img {
     height: 35px;
 }
+
+.blog h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.blog p {
+    font-size: 110%;
+    padding: 10px;
+}
+
+.blog ul {
+    padding-left: 5vh;
+    padding-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 110%;
+    text-align: center;
+    padding: 15px;
+}
+
 
 @media (max-width: 768px) {
 
@@ -132,6 +228,15 @@
     .banner {
         height: 250px;
         margin: 0rem -2.5rem;
+    }
+
+    .banner h1 {
+        color: white;
+        font-size: 300%;
+        text-align: center;
+        text-shadow: 2px 2px 3px rgb(63, 63, 63);
+        position: relative;
+        top: 35%;
     }
 
     .productos-grid {
@@ -170,10 +275,82 @@
         margin-left: 4px;
     }
 
+    .productos-grid-mesa {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
+        grid-template-areas:
+            "producto-once producto-tres producto-cuatro"
+            "producto-cinco . .";
+    }
+
+    .productos-grid-mesa img {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid-mesa div {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid-mesa h2 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 4px;
+        font-size: 100%;
+    }
+
+    .productos-grid-mesa p {
+        font-size: 80%;
+        padding: 5px 0px;
+    }
+
+    .productos-grid-mesa button {
+        margin-left: 4px;
+    }
+
+    .productos-grid-rol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
+        grid-template-areas:
+            "producto-siete producto-ocho producto-nueve"
+            "producto-diez . .";
+    }
+
+    .productos-grid-rol img {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid-rol div {
+        width: 27vw;
+        padding: 3px;
+    }
+
+    .productos-grid-rol h2 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 4px;
+        font-size: 100%;
+    }
+
+    .productos-grid-rol p {
+        font-size: 80%;
+        padding: 5px 0px;
+    }
+
+    .productos-grid-rol button {
+        margin-left: 4px;
+    }
+
     .footer div {
         color: white;
         text-align: center;
-        font-size: 80%;
+        font-size: 90%;
         padding: 15px;
     }
 
@@ -208,11 +385,21 @@
     }
 
     .botones a {
-        padding: 2rem;
+        padding: 3px;
         font-weight: 700;
         font-size: 100%;
         text-decoration: none;
         color: #e10e82;
+    }
+
+    .banner h1 {
+        padding: 10px;
+        color: white;
+        font-size: 220%;
+        text-align: center;
+        text-shadow: 2px 2px 3px rgb(63, 63, 63);
+        position: relative;
+        top: 15vh;
     }
 
     .productos-grid {
@@ -252,6 +439,82 @@
     }
 
     .productos-grid button {
+        margin: 0px 0px 4px 4px;
+    }
+
+    .productos-grid-rol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (64, 1fr);
+        gap: 2px;
+        grid-template-areas:
+            "producto-siete"
+            "producto-ocho"
+            "producto-nueve"
+            "producto-diez";
+    }
+
+    .productos-grid-rol img {
+        width: 80vw;
+        padding: 3px;
+    }
+
+    .productos-grid-rol div {
+        width: 80vw;
+        padding: 3px;
+    }
+
+    .productos-grid-rol h2 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 4px;
+        font-size: 140%;
+    }
+
+    .productos-grid-rol p {
+        font-size: 100%;
+        padding: 5px 0px;
+    }
+
+    .productos-grid-rol button {
+        margin: 0px 0px 4px 4px;
+    }
+
+    .productos-grid-mesa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (64, 1fr);
+        gap: 2px;
+        grid-template-areas:
+            "producto-once"
+            "producto-tres"
+            "producto-cuatro"
+            "producto-cinco";
+    }
+
+    .productos-grid-mesa img {
+        width: 80vw;
+        padding: 3px;
+    }
+
+    .productos-grid-mesa div {
+        width: 80vw;
+        padding: 3px;
+    }
+
+    .productos-grid-mesa h2 {
+        color: #e10e82;
+        background-color: #e10e8223;
+        padding: 4px;
+        font-size: 140%;
+    }
+
+    .productos-grid-mesa p {
+        font-size: 100%;
+        padding: 5px 0px;
+    }
+
+    .productos-grid-mesa button {
         margin: 0px 0px 4px 4px;
     }
 
